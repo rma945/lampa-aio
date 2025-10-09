@@ -1,0 +1,31 @@
+{
+    "language": "en",
+    "proxy_tmdb": false,
+    "proxy_tmdb_auto": false,
+    "parser_use": true,
+    "parser_torrent_type": "jackett",
+    "jackett_key": "",
+    "jackett_url": "http://jacked.example.com",
+    "player_torrent": "inner",
+    "torrserver_url": "http://torrserver.example.com",
+    "plugins": [
+        {
+            "url": "http://tv.example.com/plugins/iptv.js",
+            "status": 1,
+            "name": "IPTV",
+            "author": "@lampa"
+        },
+        {
+            "url": "http://tv.example.com/plugins/rating.js",
+            "status": 1,
+            "name": "IMDB Rating",
+            "author": "@lampa"
+        },
+        {
+            "url": "http://tv.example.com/plugins/tracks.js",
+            "status": 1,
+            "name": "Torrent tracks",
+            "author": "@lampa"
+        }
+    ]
+}
