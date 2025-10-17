@@ -81,5 +81,5 @@ docker run -d \
   -p 8080:8080 \
   -v $(pwd)/config.json:/www/config.json:ro \
   -v $(pwd)/plugins:/www/plugins:ro \
-  ghcr.io/yourname/lampa-aio:latest
+  ghcr.io/rma945/lampa-aio:latest
 ```
