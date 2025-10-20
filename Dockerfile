@@ -26,6 +26,7 @@ RUN apk add --no-cache nginx && mkdir /www/
 COPY conf/nginx.conf /etc/nginx/nginx.conf
 COPY --chown=nginx:nginx --chmod=640 conf/config.json /www/
 COPY --chown=nginx:nginx --chmod=640 conf/auto-config.js /www/
+COPY --chown=nginx:nginx plugins /www/plugins
 COPY --chown=nginx:nginx --chmod=550 conf/entrypoint.sh /entrypoint.sh
 COPY --chown=nginx:nginx --from=builder /src/build/web/ /www/
 
